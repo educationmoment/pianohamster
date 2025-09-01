@@ -124,7 +124,7 @@ note C5 q
 "@ | Out-File -Encoding ASCII example.ps
 
 # compile
-.\target\release\pianoscript.exe example.ps -o example.mid
+.\target\release\pianohamster.exe example.ps -o example.mid
 
 # open your midi file in whatever
 
