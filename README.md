@@ -1,5 +1,10 @@
 # Piano Hamster
 
+
+![Logo](hamster-logo.png)
+
+
+
 A piano programming language that compiles to MIDI. PianoHamster supports Right Hand, Left Hand ,pedal, chords, rests, bars, tempo/time/key, and compiles to a MIDI file. Just like a real piano.
 
 created in rust.
