@@ -1,0 +1,26 @@
+{
+"name": "pianohamster-syntax",
+"displayName": "pianohamster Syntax",
+"description": "Syntax highlighting for the pianohamster language (piano-first DSL → MIDI)",
+"version": "0.0.1",
+"publisher": "educationmoment",
+"engines": { "vscode": "^1.85.0" },
+"categories": ["Programming Languages"],
+"contributes": {
+"languages": [
+{
+"id": "pianohamster",
+"aliases": ["pianohamster", "pianohamster", "ps"],
+"extensions": [".ps"],
+"configuration": "./language-configuration.json"
+}
+],
+"grammars": [
+{
+"language": "pianohamster",
+"scopeName": "source.pianohamster",
+"path": "./syntaxes/pianohamster.tmLanguage.json"
+}
+]
+}
+}
