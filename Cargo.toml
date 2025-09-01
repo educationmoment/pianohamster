@@ -1,0 +1,12 @@
+[package]
+name = "PianoHamster"
+version = "0.1.0"
+edition = "2021"
+description = "PianoHamster, a midi compiler."
+license = "MIT"
+
+
+[dependencies]
+clap = { version = "4.5", features = ["derive"] }
+anyhow = "1.0"
+thiserror = "1.0"
