@@ -14,20 +14,15 @@ created in rust.
 
 ## output
 
-- **format**: standard MIDI file (SMF), **format 1**, PPQ 480
-- **tracks**: `Conductor`, `Right Hand`, `Left Hand`
-- **pedal**: Sustain mapped to **CC64** (127 = down, 0 = up)
+**format**: standard MIDI file (SMF), **format 1**, PPQ 480
 
 ---
 
 ## features
 
-- **two main "voices"**: `RH` & `LH`
 - **notes & chords**: `note C4 q`, `chord [C4 E4 G4] h`
 - **pedal**: `pedal on/off`, `pedal q` 
 - **tempo / time / key**: `tempo 84`, `time 4/4`, `key major 0`
-- **dynamics (velocity)**: global `velocity 88`, per-note `note C4 q vel 100`
-- **bars (cosmetic)**: visual separators with `|`
 - **instrument**: general insturment, example: `instrument 0` is acoustic grand
 - **portable output**: open in any midi player
 
