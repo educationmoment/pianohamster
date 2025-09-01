@@ -1,0 +1,71 @@
+{
+"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+"name": "PianoHamster",
+"scopeName": "source.pianohamster",
+"patterns": [
+{ "include": "#comments" },
+{ "include": "#keywords" },
+{ "include": "#pitches" },
+{ "include": "#durations" },
+{ "include": "#bars" },
+{ "include": "#numbers" }
+],
+"repository": {
+"comments": {
+"patterns": [
+{
+"name": "comment.line.number-sign.pianohamster",
+"match": "^\s*#.*$"
+}
+]
+},
+"keywords": {
+"patterns": [
+{
+"name": "keyword.control.pianohamster",
+"match": "\\b(?:tempo|time|key|instrument|velocity|voice|note|chord|rest|pedal)\\b"
+},
+{
+"name": "keyword.other.mode.pianohamster",
+"match": "\\b(?:major|min|minor|RH|LH|on|off|down|up)\\b"
+}
+]
+},
+"pitches": {
+"patterns": [
+{
+"name": "constant.numeric.pitch.pianohamster",
+"match": "\\b(?:[A-G](?:#|b)?)(?:-?\\d)\\b"
+}
+]
+},
+"durations": {
+"patterns": [
+{
+"name": "constant.language.duration.pianohamster",
+"match": "\\b(?:w|h|q|e|s)\\.?\\b"
+}
+]
+},
+"bars": {
+"patterns": [
+{
+"name": "punctuation.separator.bar.pianohamster",
+"match": "^\\s*\\|\\s*$"
+},
+{
+"name": "punctuation.section.brackets.pianohamster",
+"match": "[\\[\\]]"
+}
+]
+},
+"numbers": {
+"patterns": [
+{
+"name": "constant.numeric.integer.pianohamster",
+"match": "\\b[0-9]+\\b"
+}
+]
+}
+}
+}
